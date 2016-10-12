@@ -1,0 +1,49 @@
+% \VignetteIndexEntry{HelloRanges Example Data}
+% \VignetteKeywords{data, ranges, bedtools}
+% \VignettePackage{HelloRanges}
+\documentclass[10pt]{article}
+
+<<style-Sweave, eval=TRUE, echo=FALSE, results=tex>>=
+BiocStyle::latex2()
+@
+
+\bioctitle[HelloRanges Data]{Data for the HelloRanges Tutorial}
+
+\author{Michael Lawrence\thanks{\email{michafla@gene.com}}\\Genentech}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\packageVersion{\Sexpr{BiocStyle::pkg_ver("HelloRangesData")}}
+\tableofcontents
+\newpage
+
+\section{Overview}
+
+In support of the tutorial vignette for the \Biocpkg{HelloRanges}
+package, \Biocpkg{HelloRangesData} provides an experimental dataset on
+DnaseI hypersensitivity \cite{dataset}, as well as several annotation
+tracks downloaded from the UCSC genome browser. The files were made
+available as part of the \software{bedtools} tutorial
+(\url{http://quinlanlab.org/tutorials/bedtools/bedtools.html}) by
+Aaron Quinlan.
+
+The data are stored in files here:
+<<files>>=
+dir(system.file("extdata", package="HelloRangesData"))
+@ 
+There are 20 BED files from the DnaseI study, as
+well as BED files representing the CpG islands (\file{cpg.bed}),
+Refseq exons (\file{exons.bed}), disease-associated SNPs
+(\file{gwas.bed}), and functional annotations output by chromHMM given
+ENCODE human embrionic stem cell ChIP-seq data
+(\file{hesc.chromHmm.bed}). There is also a \file{hg19.genome} file
+indicating the chromosome lengths of the hg19 genome build.
+
+Please see the \Biocpkg{HelloRanges} vignette to learn how to work
+with these data with \Bioconductor{}.
+
+\bibliography{intro}
+
+\end{document}
