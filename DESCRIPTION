@@ -3,7 +3,7 @@ Type: Package
 Title: Data for the HelloRanges tutorial vignette
 Version: 1.35.0
 Author: Michael Lawrence
-Maintainer: Michael Lawrence <michafla@gene.com>
+Maintainer: Michael Lawrence <lawremi@gmail.com>
 Description: Provides the data that were used in the bedtools tutorial
         by Aaron Quinlan
         (http://quinlanlab.org/tutorials/bedtools/bedtools.html).
