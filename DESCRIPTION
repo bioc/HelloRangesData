@@ -1,7 +1,7 @@
 Package: HelloRangesData
 Type: Package
 Title: Data for the HelloRanges tutorial vignette
-Version: 1.35.0
+Version: 1.36.0
 Author: Michael Lawrence
 Maintainer: Michael Lawrence <lawremi@gmail.com>
 Description: Provides the data that were used in the bedtools tutorial
